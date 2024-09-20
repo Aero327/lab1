@@ -1,0 +1,15 @@
+/home/outr1ggr/projects/C#/lab1/bin/Debug/net6.0/lab1
+/home/outr1ggr/projects/C#/lab1/bin/Debug/net6.0/lab1.deps.json
+/home/outr1ggr/projects/C#/lab1/bin/Debug/net6.0/lab1.runtimeconfig.json
+/home/outr1ggr/projects/C#/lab1/bin/Debug/net6.0/lab1.dll
+/home/outr1ggr/projects/C#/lab1/bin/Debug/net6.0/lab1.pdb
+/home/outr1ggr/projects/C#/lab1/obj/Debug/net6.0/lab1.csproj.AssemblyReference.cache
+/home/outr1ggr/projects/C#/lab1/obj/Debug/net6.0/lab1.GeneratedMSBuildEditorConfig.editorconfig
+/home/outr1ggr/projects/C#/lab1/obj/Debug/net6.0/lab1.AssemblyInfoInputs.cache
+/home/outr1ggr/projects/C#/lab1/obj/Debug/net6.0/lab1.AssemblyInfo.cs
+/home/outr1ggr/projects/C#/lab1/obj/Debug/net6.0/lab1.csproj.CoreCompileInputs.cache
+/home/outr1ggr/projects/C#/lab1/obj/Debug/net6.0/lab1.dll
+/home/outr1ggr/projects/C#/lab1/obj/Debug/net6.0/refint/lab1.dll
+/home/outr1ggr/projects/C#/lab1/obj/Debug/net6.0/lab1.pdb
+/home/outr1ggr/projects/C#/lab1/obj/Debug/net6.0/lab1.genruntimeconfig.cache
+/home/outr1ggr/projects/C#/lab1/obj/Debug/net6.0/ref/lab1.dll
