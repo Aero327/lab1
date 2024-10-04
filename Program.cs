@@ -4,171 +4,171 @@
         Program pr = new Program();
 
         // Задание 1.2
-        /*
-        int x1, result1;
+        
+        // int x1, result1;
 
-        System.Console.Write("Введите число не менее чем с двумя знаками: ");
-        x1 = Convert.ToInt32(System.Console.ReadLine());
+        // System.Console.Write("Введите число не менее чем с двумя знаками: ");
+        // x1 = Convert.ToInt32(System.Console.ReadLine());
 
-        result1 = pr.sumLastNums(x1);
+        // result1 = pr.sumLastNums(x1);
 
-        System.Console.WriteLine("Сумма двух последних знаков числа: " + result1);
-        */
+        // System.Console.WriteLine("Сумма двух последних знаков числа: " + result1);
+        
         // Задание 1.4
-        /*
-        int x2; 
-        bool result2;
+        
+        // int x2; 
+        // bool result2;
 
-        System.Console.Write("Введите число: ");
-        x2 = Convert.ToInt32(System.Console.ReadLine());
+        // System.Console.Write("Введите число: ");
+        // x2 = Convert.ToInt32(System.Console.ReadLine());
 
-        result2 = pr.isPositive(x2);
-        if (result2) System.Console.WriteLine("Число положительное");
-        else System.Console.WriteLine("Число не положительное");
-        */
+        // result2 = pr.isPositive(x2);
+        // if (result2) System.Console.WriteLine("Число положительное");
+        // else System.Console.WriteLine("Число не положительное");
+        
         // Задание 1.6
-        /*
-        char x3; 
-        bool result3;
+        
+        // char x3; 
+        // bool result3;
 
-        System.Console.Write("Введите символ: ");
-        x3 = Convert.ToChar(System.Console.ReadLine());
+        // System.Console.Write("Введите символ: ");
+        // x3 = Convert.ToChar(Console.ReadLine());
 
-        result3 = pr.isUpperCase(x3);
-        if (result3) System.Console.WriteLine("Символ является прописной буквой");
-        else System.Console.WriteLine("Символ не является прописной буквой");
-        */
+        // result3 = pr.isUpperCase(x3);
+        // if (result3) System.Console.WriteLine("Символ является прописной буквой");
+        // else System.Console.WriteLine("Символ не является прописной буквой");
+        
         // Задание 1.8
-        /*int a4, b4;
-        bool result;
+        // int a4, b4;
+        // bool result;
 
-        System.Console.Write("Введите число a: ");
-        a4 = Convert.ToInt32(Console.ReadLine());
+        // System.Console.Write("Введите число a: ");
+        // a4 = Convert.ToInt32(Console.ReadLine());
 
-        System.Console.Write("Введите число b: ");
-        b4 = Convert.ToInt32(Console.ReadLine());
+        // System.Console.Write("Введите число b: ");
+        // b4 = Convert.ToInt32(Console.ReadLine());
 
-        if ((a4 == 0 || b4 == 0) && !(a4 == 0 && b4 == 0)) 
-            System.Console.WriteLine("Одно из чисел делит другое нацело");
+        // if ((a4 == 0 || b4 == 0) && !(a4 == 0 && b4 == 0)) 
+        //     System.Console.WriteLine("Одно из чисел делит другое нацело");
 
-        else if (a4 == 0 && b4 == 0)
-            System.Console.WriteLine("Ошибка: деление на 0");
+        // else if (a4 == 0 && b4 == 0)
+        //     System.Console.WriteLine("Ошибка: деление на 0");
 
-        else {
-            result = pr.isDivisor(a4, b4);
-            if (result) System.Console.WriteLine("Одно из чисел делит другое нацело");
-            else System.Console.WriteLine("Ни одно из чисел не делит другое нацело");
-        }*/
+        // else {
+        //     result = pr.isDivisor(a4, b4);
+        //     if (result) System.Console.WriteLine("Одно из чисел делит другое нацело");
+        //     else System.Console.WriteLine("Ни одно из чисел не делит другое нацело");
+        // }
         
         // Задание 1.10
-        /*int a, b;
-        Random rand = new Random();
+        // int a, b;
+        // Random rand = new Random();
 
-        a = rand.Next(0, 100);
-        for (int i = 0; i < 5; i++) {
-            b = rand.Next(0, 100);
-            Console.Write(a + "+" + b + " это ");
+        // a = rand.Next(0, 100);
+        // for (int i = 0; i < 5; i++) {
+        //     b = rand.Next(0, 100);
+        //     Console.Write(a + "+" + b + " это ");
             
-            a = pr.lastNumSum(a, b);
-            Console.WriteLine(a);
-        }
+        //     a = pr.lastNumSum(a, b);
+        //     Console.WriteLine(a);
+        // }
 
-        Console.WriteLine("Итого " + a);*/
+        // Console.WriteLine("Итого " + a);
         
         // Задание 2.2
-        /*int x, y; 
-        double result;
+        // int x, y; 
+        // double result;
         
-        Console.Write("Введите x: ");
-        x = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Введите x: ");
+        // x = Convert.ToInt32(Console.ReadLine());
 
-        Console.Write("Введите y: ");
-        y = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Введите y: ");
+        // y = Convert.ToInt32(Console.ReadLine());
 
-        result = pr.safeDiv(x, y);
-        Console.WriteLine("Результат: " + result);*/
+        // result = pr.safeDiv(x, y);
+        // Console.WriteLine("Результат: " + result);
         
         // Задание 2.4
-        /*int x, y; 
-        string result;
+        // int x, y; 
+        // string result;
         
-        Console.Write("Введите x: ");
-        x = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Введите x: ");
+        // x = Convert.ToInt32(Console.ReadLine());
 
-        Console.Write("Введите y: ");
-        y = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Введите y: ");
+        // y = Convert.ToInt32(Console.ReadLine());
 
-        result = pr.makeDecision(x, y);
-        Console.WriteLine("Результат: " + result);*/
+        // result = pr.makeDecision(x, y);
+        // Console.WriteLine("Результат: " + result);
         
         // Задание 2.6
-        /*int x, y, z;
+        // int x, y, z;
         
-        Console.Write("Введите x: ");
-        x = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Введите x: ");
+        // x = Convert.ToInt32(Console.ReadLine());
 
-        Console.Write("Введите y: ");
-        y = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Введите y: ");
+        // y = Convert.ToInt32(Console.ReadLine());
         
-        Console.Write("Введите z: ");
-        z = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Введите z: ");
+        // z = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Результат: " + pr.sum3(x, y, z));*/
+        // Console.WriteLine("Результат: " + pr.sum3(x, y, z));
         
         // Задание 2.8
-        /*int x;
+        // int x;
 
-        Console.Write("Введите возраст: ");
-        x = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Введите возраст: ");
+        // x = Convert.ToInt32(Console.ReadLine());
         
-        Console.WriteLine(pr.age(x));*/
+        // Console.WriteLine(pr.age(x));
         
         // Задание 2.10
-        /*String x;
+        // String x;
 
-        Console.Write("Введите день недели: ");
-        x = Console.ReadLine();
+        // Console.Write("Введите день недели: ");
+        // x = Console.ReadLine();
 
-        pr.printDays(x);*/
+        // pr.printDays(x);
         
         // Задание 3.2
-        /*int x;
+        // int x;
 
-        Console.Write("Введите число: ");
-        x = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Введите число: ");
+        // x = Convert.ToInt32(Console.ReadLine());
         
-        Console.WriteLine("Результат: " + pr.reverseListNums(x));*/
+        // Console.WriteLine("Результат: " + pr.reverseListNums(x));
         
         // Задание 3.4
-        /*int x, y;
+        // int x, y;
         
-        Console.Write("Введите число: ");
-        x = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Введите число: ");
+        // x = Convert.ToInt32(Console.ReadLine());
 
-        Console.Write("Введите степень: ");
-        y = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Введите степень: ");
+        // y = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine($"Число {x} в степени {y} -> {pr.pow(x, y)}");*/
+        // Console.WriteLine($"Число {x} в степени {y} -> {pr.pow(x, y)}");
         
         // Задание 3.6
-        /*int x;
-        bool result;
+        // int x;
+        // bool result;
         
-        Console.Write("Введите число: ");
-        x = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Введите число: ");
+        // x = Convert.ToInt32(Console.ReadLine());
 
-        result = pr.equalNum(x);
+        // result = pr.equalNum(x);
         
-        if (result) Console.WriteLine("В этом числе все цифры одинаковы");
-        else Console.WriteLine("В этом числе цифры различаются");*/
+        // if (result) Console.WriteLine("В этом числе все цифры одинаковы");
+        // else Console.WriteLine("В этом числе цифры различаются");
         
         // Задание 3.8
-        /*int x;
+        // int x;
         
-        Console.Write("Введите число: ");
-        x = Convert.ToInt32(Console.ReadLine());
+        // Console.Write("Введите число: ");
+        // x = Convert.ToInt32(Console.ReadLine());
         
-        pr.leftTriangle(x);*/
+        // pr.leftTriangle(x);
         
         // Задание 3.10
         // pr.guessGame();
@@ -179,7 +179,7 @@
     {
         string num = x.ToString();
 
-        return (num[^1] - '0') + (num[^1] - '0');
+        return num[^1] - '0' + num[^2] - '0';
     }
 
     // Задание 1.4
@@ -232,7 +232,7 @@
     {
         if (x % 10 == 1 && x != 11) return x + " год";
         else if ((x % 10 == 2 || x % 10 == 3 || x % 10 == 4) && x != 12 && x != 13 && x != 14)
-            return x + " гойда";
+            return x + " года";
         return x + " лет";
     }
     
