@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C1MpFu6BkMbfMjUOZgWO9hnRdmIujpipiTbVvg5zfwW63VB9YbV4/mNEIO/O9oqkveTaO5BsgfGbVrOgJpinuw==",
+  "dgSpecHash": "vEyPsIJxLCA=",
   "success": true,
-  "projectFilePath": "/home/outr1ggr/projects/C#/lab1/lab1.csproj",
-  "expectedPackageFiles": [
-    "/home/outr1ggr/.nuget/packages/microsoft.netcore.app.ref/6.0.8/microsoft.netcore.app.ref.6.0.8.nupkg.sha512",
-    "/home/outr1ggr/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.8/microsoft.aspnetcore.app.ref.6.0.8.nupkg.sha512",
-    "/home/outr1ggr/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.8/microsoft.netcore.app.host.linux-x64.6.0.8.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\outr1ggr\\source\\repos\\lab1\\lab1.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
