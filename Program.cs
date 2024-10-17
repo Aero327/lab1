@@ -172,6 +172,112 @@
         
         // Задание 3.10
         // pr.guessGame();
+        
+        // Задание 4.2
+        /*int x, n, result;
+        
+        Console.Write("Введите длину массива: ");
+        n = Convert.ToInt32(Console.ReadLine());
+        int[] arr = new int[n];
+
+        Console.WriteLine("Введите элементы массива:");
+        for (int i = 0; i < n; i++)
+        {
+            arr[i] = Convert.ToInt32(Console.ReadLine());
+        }
+
+        Console.Write("Введите искомое число: ");
+        x = Convert.ToInt32(Console.ReadLine());
+
+        result = pr.findLast(arr, x);
+        if (result < 0) 
+            Console.WriteLine("Число не найдено");
+        else 
+            Console.WriteLine($"Индекс искомого числа в массиве: {result}");*/
+        
+        // Задание 4.4
+        /*int x, n, pos;
+        
+        Console.Write("Введите длину массива: ");
+        n = Convert.ToInt32(Console.ReadLine());
+        
+        int[] arr = new int[n];
+        int[] result = new int[n + 1];
+        
+        Console.WriteLine("Введите элементы массива:");
+        for (int i = 0; i < n; i++)
+        {
+            arr[i] = Convert.ToInt32(Console.ReadLine());
+        }
+
+        Console.Write("Введите число, которое хотите добавить: ");
+        x = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Введите индекс, на место которого вы хотите вставить число: ");
+        pos = Convert.ToInt32(Console.ReadLine());
+        
+        result = pr.add(arr, x, pos);
+        string str = "[" + string.Join(", ", result) + "]";
+        Console.Write($"Итоговый массив: {str}");*/
+        
+        // Задание 4.6
+        /*int n;
+
+        Console.Write("Введите длину массива: ");
+        n = Convert.ToInt32(Console.ReadLine());
+        int[] arr = new int[n];
+
+        Console.WriteLine("Введите элементы массива:");
+        for (int i = 0; i < n; i++)
+        {
+            arr[i] = Convert.ToInt32(Console.ReadLine());
+        }
+        
+        pr.reverse(ref arr);
+        Console.WriteLine($"Ваш массив наоборот: [{string.Join(", ", arr)}]");*/
+        
+        // Задание 4.8
+        /*int n1, n2;
+
+        Console.Write("Введите длину первого массива: ");
+        n1 = Convert.ToInt32(Console.ReadLine());
+        int[] arr1 = new int[n1];
+
+        Console.WriteLine("Введите элементы первого массива:");
+        for (int i = 0; i < n1; i++)
+        {
+            arr1[i] = Convert.ToInt32(Console.ReadLine());
+        }
+        
+        Console.Write("Введите длину второго массива: ");
+        n2 = Convert.ToInt32(Console.ReadLine());
+        int[] arr2 = new int[n2];
+
+        Console.WriteLine("Введите элементы второго массива:");
+        for (int i = 0; i < n2; i++)
+        {
+            arr2[i] = Convert.ToInt32(Console.ReadLine());
+        }
+        
+        int[] result = new int[n1 + n2];
+        result = pr.concat(arr1, arr2);
+
+        Console.WriteLine($"Результат слияния массивов: [{string.Join(", ", result)}]");*/
+        
+        // Задание 4.10
+        /*int n;
+
+        Console.Write("Введите длину массива: ");
+        n = Convert.ToInt32(Console.ReadLine());
+        int[] arr = new int[n];
+
+        Console.WriteLine("Введите элементы массива:");
+        for (int i = 0; i < n; i++)
+        {
+            arr[i] = Convert.ToInt32(Console.ReadLine());
+        }
+
+        Console.WriteLine($"Массив без отрицательных чисел: [{string.Join(", ", pr.deleteNegative(arr))}]");*/
     }
 
     // Задание 1.2
@@ -342,5 +448,79 @@
 
         Console.WriteLine("Вы угадали!");
         Console.WriteLine($"Вы отгадали число за {user_guess_count} попытки");
+    }
+    
+    // Задание 4.2
+    public int findLast(int[] arr, int x)
+    {
+        for (int i = arr.Length - 1; i >= 0; i--)
+        {
+            if (arr[i] == x) return i;
+        }
+        return -1;
+    }
+
+    // Задание 4.4
+    public int[] add(int[] arr, int x, int pos)
+    {
+        int[] result = new int[arr.Length + 1];
+        result[pos] = x;
+        bool flag = false;
+
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (flag)
+                result[i + 1] = arr[i];
+            else if (i != pos)
+                result[i] = arr[i];
+            else
+            {
+                i -= 1;
+                flag = true;
+            }
+        }
+
+        return result;
+    }
+
+    // Задание 4.6
+    public void reverse(ref int[] arr)
+    {
+        int[] arrCopy = new int[arr.Length];
+        arr.CopyTo(arrCopy, 0);
+
+        for (int i = 0; i < arr.Length; i++)
+            arr[i] = arrCopy[arr.Length - 1 - i];
+    }
+    
+    // Задание 4.8
+    public int[] concat(int[] arr1, int[] arr2)
+    {
+        int[] result = new int[arr1.Length + arr2.Length];
+
+        for (int i = 0; i < arr1.Length; i++)
+            result[i] = arr1[i];
+        for (int i = 0; i < arr2.Length; i++)
+            result[i + arr1.Length] = arr2[i];
+        
+        return result;
+    }
+    
+    // Задание 4.10
+    public int[] deleteNegative(int[] arr)
+    {
+        int[] result = new int[arr.Length];
+        int positiveCount = 0;
+
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (arr[i] >= 0)
+            {
+                result[positiveCount] = arr[i];
+                positiveCount++;
+            }
+        }
+        
+        return result[0..positiveCount];
     }
 }
