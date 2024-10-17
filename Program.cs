@@ -265,7 +265,7 @@
         Console.WriteLine($"Результат слияния массивов: [{string.Join(", ", result)}]");*/
         
         // Задание 4.10
-        /*int n;
+        int n;
 
         Console.Write("Введите длину массива: ");
         n = Convert.ToInt32(Console.ReadLine());
@@ -277,7 +277,7 @@
             arr[i] = Convert.ToInt32(Console.ReadLine());
         }
 
-        Console.WriteLine($"Массив без отрицательных чисел: [{string.Join(", ", pr.deleteNegative(arr))}]");*/
+        Console.WriteLine($"Массив без отрицательных чисел: [{string.Join(", ", pr.deleteNegative(arr))}]");
     }
 
     // Задание 1.2
