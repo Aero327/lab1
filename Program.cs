@@ -40,7 +40,7 @@
                     Console.WriteLine("Ошбика: неправильный ввод");
                     break;
                 default:
-                    Console.WriteLine("Произошла непредвиденная ошибка");
+                    Console.WriteLine($"Произошла непредвиденная ошибка: {ex.Message}");
                     break;
             }
             return;
@@ -81,7 +81,7 @@
                     Console.WriteLine("Ошбика: неправильный ввод");
                     break;
                 default:
-                    Console.WriteLine("Произошла непредвиденная ошибка");
+                    Console.WriteLine($"Произошла непредвиденная ошибка: {ex.Message}");
                     break;
             }
             return;
@@ -122,7 +122,7 @@
                     Console.WriteLine("Ошбика: неправильный ввод");
                     break;
                 default:
-                    Console.WriteLine("Произошла непредвиденная ошибка");
+                    Console.WriteLine($"Произошла непредвиденная ошибка: {ex.Message}");
                     break;
             }
             return;
@@ -163,7 +163,7 @@
                     Console.WriteLine("Ошбика: неправильный ввод");
                     break;
                 default:
-                    Console.WriteLine("Произошла непредвиденная ошибка");
+                    Console.WriteLine($"Произошла непредвиденная ошибка: {ex.Message}");
                     break;
             }
             return;
@@ -204,7 +204,7 @@
                     Console.WriteLine("Ошбика: неправильный ввод");
                     break;
                 default:
-                    Console.WriteLine("Произошла непредвиденная ошибка");
+                    Console.WriteLine($"Произошла непредвиденная ошибка: {ex.Message}");
                     break;
             }
             return;
